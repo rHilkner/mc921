@@ -3,7 +3,7 @@ package com.compiladores;
 /**
  * Created by rodrigohilkner on Sep, 2019
  */
-public class GrammarParser {
+public class GrammarLab03Parser {
     public static void main(String[] args) throws Exception {
         // create a CharStream that reads from standard input
         CharStream input = CharStreams.fromStream(System.in);

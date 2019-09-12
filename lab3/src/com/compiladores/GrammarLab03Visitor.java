@@ -1,6 +1,6 @@
 package com.compiladores;
 
-public class GrammarVisitor {
+public class GrammarLab03Visitor {
     public Integer visitRoot(SummerParser.RootContext ctx)
     {
         Integer val = visit(ctx.expr(0)) + visit(ctx.expr(1));

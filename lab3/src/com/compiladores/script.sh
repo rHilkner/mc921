@@ -13,4 +13,4 @@ echo "(5+4+3+2+10)" | java org.antlr.v4.gui.TestRig Summer root -tree
 #feeding a string and printing a graphical tree
 echo "(5+4+3+2+10)" | java org.antlr.v4.gui.TestRig Summer root -gui
 #execute the implemented visitor
-echo "(5+4+3+2+1)" | java MyParser
+echo "(5+4+3+2+1)" | java GrammarParser
