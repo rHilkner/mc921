@@ -43,13 +43,6 @@ public interface GrammarLab03Visitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitExprSum(GrammarLab03Parser.ExprSumContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code ExprSpace}
-	 * labeled alternative in {@link GrammarLab03Parser#expr}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitExprSpace(GrammarLab03Parser.ExprSpaceContext ctx);
-	/**
 	 * Visit a parse tree produced by the {@code ExprSub}
 	 * labeled alternative in {@link GrammarLab03Parser#expr}.
 	 * @param ctx the parse tree

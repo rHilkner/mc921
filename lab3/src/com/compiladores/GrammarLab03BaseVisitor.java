@@ -51,13 +51,6 @@ public class GrammarLab03BaseVisitor<T> extends AbstractParseTreeVisitor<T> impl
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitExprSpace(GrammarLab03Parser.ExprSpaceContext ctx) { return visitChildren(ctx); }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation returns the result of calling
-	 * {@link #visitChildren} on {@code ctx}.</p>
-	 */
 	@Override public T visitExprSub(GrammarLab03Parser.ExprSubContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
