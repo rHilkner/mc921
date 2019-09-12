@@ -10,6 +10,12 @@ import org.antlr.v4.runtime.tree.ParseTreeVisitor;
  */
 public interface GrammarLab03Visitor<T> extends ParseTreeVisitor<T> {
 	/**
+	 * Visit a parse tree produced by {@link GrammarLab03Parser#root}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitRoot(GrammarLab03Parser.RootContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link GrammarLab03Parser#func}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -36,6 +42,13 @@ public interface GrammarLab03Visitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitExprSum(GrammarLab03Parser.ExprSumContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code ExprSpace}
+	 * labeled alternative in {@link GrammarLab03Parser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprSpace(GrammarLab03Parser.ExprSpaceContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code ExprSub}
 	 * labeled alternative in {@link GrammarLab03Parser#expr}.

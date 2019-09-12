@@ -5,7 +5,7 @@ java -jar "antlr-4.7.2-complete.jar" -no-listener -visitor GrammarLab03.g4
 #exporting the class path
 export CLASSPATH=".:antlr-4.7.2-complete.jar:$CLASSPATH"
 #compiling the .java generated from Sum.g4 with MyParser.java and AddVisitor.java
-#javac *.java
+javac *.java
 ##feeding a string and reading the tokens
 #echo "(5+4+3+2+10)" | java org.antlr.v4.gui.TestRig GrammarLab03 root -tokens
 ##feeding a string and reading tree in list style

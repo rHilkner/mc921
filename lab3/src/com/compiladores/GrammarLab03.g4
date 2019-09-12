@@ -1,5 +1,7 @@
 grammar GrammarLab03;
 
+root: func | expr | var;
+
 func: 'func' ID *'('ID?(','ID)*')'expr';';
 
 expr: expr '+' expr         # ExprSum
@@ -10,7 +12,10 @@ expr: expr '+' expr         # ExprSum
     | NUM                   # ExprNum
     | ID                    # ExprId
     ;
+
 var: 'var' ID '=' expr ';';
+
+ignore
 
 ID : [a-zA-Z_][a-zA-Z0-9_]*;
 NUM : [0-9]+;
