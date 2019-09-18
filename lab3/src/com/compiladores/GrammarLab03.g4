@@ -1,6 +1,6 @@
 grammar GrammarLab03;
 
-root: func | var | expr';\n';
+root: func | var ';\n';
 
 func: 'func ' ID '(' ID?(', 'ID)*') ' expr;
 

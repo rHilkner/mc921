@@ -107,7 +107,7 @@ public class GrammarLab03Parser extends Parser {
 		@Override public int getRuleIndex() { return RULE_root; }
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof GrammarLab03Visitor ) return ((GrammarLab03Visitor<? extends T>)visitor).visitRoot(this);
+			if ( visitor instanceof GrammarLab03Visitor) return ((GrammarLab03Visitor<? extends T>)visitor).visitRoot(this);
 			else return visitor.visitChildren(this);
 		}
 	}
