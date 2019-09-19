@@ -1,4 +1,4 @@
-package com.compiladores;// Generated from GrammarLab03.g4 by ANTLR 4.7.2
+// Generated from GrammarLab03.g4 by ANTLR 4.7.2
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -21,6 +21,12 @@ public interface GrammarLab03Visitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitFunc(GrammarLab03Parser.FuncContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link GrammarLab03Parser#var}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitVar(GrammarLab03Parser.VarContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code ExprNum}
 	 * labeled alternative in {@link GrammarLab03Parser#expr}.
@@ -77,10 +83,4 @@ public interface GrammarLab03Visitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitExprDiv(GrammarLab03Parser.ExprDivContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link GrammarLab03Parser#var}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitVar(GrammarLab03Parser.VarContext ctx);
 }

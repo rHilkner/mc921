@@ -17,7 +17,7 @@ public class Main {
         // create a parser that feeds off the tokens buffer
         GrammarLab03Parser parser = new GrammarLab03Parser(tokens);
         ParseTree tree = parser.root(); // begin parsing at prog rule
-        GrammarLab03Visitor vis = new GrammarLab03BaseVisitor();
+        MyAddVisitor vis = new MyAddVisitor();
         vis.visit(tree);
     }
 }

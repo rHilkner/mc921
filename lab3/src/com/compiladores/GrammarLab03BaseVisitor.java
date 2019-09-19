@@ -1,4 +1,4 @@
-package com.compiladores;// Generated from GrammarLab03.g4 by ANTLR 4.7.2
+// Generated from GrammarLab03.g4 by ANTLR 4.7.2
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**
@@ -24,6 +24,13 @@ public class GrammarLab03BaseVisitor<T> extends AbstractParseTreeVisitor<T> impl
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
 	@Override public T visitFunc(GrammarLab03Parser.FuncContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
+	@Override public T visitVar(GrammarLab03Parser.VarContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -80,11 +87,4 @@ public class GrammarLab03BaseVisitor<T> extends AbstractParseTreeVisitor<T> impl
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
 	@Override public T visitExprDiv(GrammarLab03Parser.ExprDivContext ctx) { return visitChildren(ctx); }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation returns the result of calling
-	 * {@link #visitChildren} on {@code ctx}.</p>
-	 */
-	@Override public T visitVar(GrammarLab03Parser.VarContext ctx) { return visitChildren(ctx); }
 }
