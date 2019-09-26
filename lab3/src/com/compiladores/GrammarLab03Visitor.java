@@ -28,6 +28,13 @@ public interface GrammarLab03Visitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitVar(GrammarLab03Parser.VarContext ctx);
 	/**
+	 * Visit a parse tree produced by the {@code ExprSpaceRight}
+	 * labeled alternative in {@link GrammarLab03Parser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprSpaceRight(GrammarLab03Parser.ExprSpaceRightContext ctx);
+	/**
 	 * Visit a parse tree produced by the {@code ExprNum}
 	 * labeled alternative in {@link GrammarLab03Parser#expr}.
 	 * @param ctx the parse tree
@@ -42,26 +49,12 @@ public interface GrammarLab03Visitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitExprMult(GrammarLab03Parser.ExprMultContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code ExprFuncCall}
-	 * labeled alternative in {@link GrammarLab03Parser#expr}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitExprFuncCall(GrammarLab03Parser.ExprFuncCallContext ctx);
-	/**
 	 * Visit a parse tree produced by the {@code ExprSum}
 	 * labeled alternative in {@link GrammarLab03Parser#expr}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitExprSum(GrammarLab03Parser.ExprSumContext ctx);
-	/**
-	 * Visit a parse tree produced by the {@code ExprSub}
-	 * labeled alternative in {@link GrammarLab03Parser#expr}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitExprSub(GrammarLab03Parser.ExprSubContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code ExprParenthesis}
 	 * labeled alternative in {@link GrammarLab03Parser#expr}.
@@ -70,17 +63,66 @@ public interface GrammarLab03Visitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitExprParenthesis(GrammarLab03Parser.ExprParenthesisContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code ExprId}
-	 * labeled alternative in {@link GrammarLab03Parser#expr}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitExprId(GrammarLab03Parser.ExprIdContext ctx);
-	/**
 	 * Visit a parse tree produced by the {@code ExprDiv}
 	 * labeled alternative in {@link GrammarLab03Parser#expr}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitExprDiv(GrammarLab03Parser.ExprDivContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code ExprParenthesisSpaceRight}
+	 * labeled alternative in {@link GrammarLab03Parser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprParenthesisSpaceRight(GrammarLab03Parser.ExprParenthesisSpaceRightContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code ExprParenthesisSpaceLeft}
+	 * labeled alternative in {@link GrammarLab03Parser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprParenthesisSpaceLeft(GrammarLab03Parser.ExprParenthesisSpaceLeftContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code ExprSpaceLeft}
+	 * labeled alternative in {@link GrammarLab03Parser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprSpaceLeft(GrammarLab03Parser.ExprSpaceLeftContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code ExprFuncCall}
+	 * labeled alternative in {@link GrammarLab03Parser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprFuncCall(GrammarLab03Parser.ExprFuncCallContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code ExprParenthesisSpaceBoth}
+	 * labeled alternative in {@link GrammarLab03Parser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprParenthesisSpaceBoth(GrammarLab03Parser.ExprParenthesisSpaceBothContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code ExprSpaceBoth}
+	 * labeled alternative in {@link GrammarLab03Parser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprSpaceBoth(GrammarLab03Parser.ExprSpaceBothContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code ExprSub}
+	 * labeled alternative in {@link GrammarLab03Parser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprSub(GrammarLab03Parser.ExprSubContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code ExprId}
+	 * labeled alternative in {@link GrammarLab03Parser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprId(GrammarLab03Parser.ExprIdContext ctx);
 }
